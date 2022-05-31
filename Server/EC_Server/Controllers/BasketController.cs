@@ -31,5 +31,12 @@ namespace EC_Server.Controllers
             var result = await basketBL.SetStatus(data);
             return result.Result ? Ok(result) : NotFound(result);
         }
+
+        [HttpPost("AddToBasket")]
+        public async Task<ObjectResult> AddToBasket(Guid id,int productId)
+        {
+            var result = await basketBL.AddToBasket(id, productId);
+            return result.Result ? Ok(result) : NotFound(result);
+        }
     }
 }

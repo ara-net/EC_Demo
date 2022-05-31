@@ -2,12 +2,14 @@ global using Microsoft.EntityFrameworkCore;
 global using EC.BL.Interface;
 global using EC.Domain;
 global using EC.Common.DTO;
+using EC_Server.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -33,5 +35,5 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapHub<BasketHub>("/basketHub");
 app.Run();

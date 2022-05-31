@@ -74,5 +74,27 @@
             return await db.SaveChangesAsync() > 0 ? GetSuccessResult(data) : GetFailResult(); ;
 
         }
+
+        public async Task<ApiResultDTO> AddToBasket(Guid id, int productId)
+        {
+            var basketDetail = db.BasketDetail.FirstOrDefault(m => m.BasketId == id && m.ProductId == productId);
+            if (basketDetail != null)
+            {
+                basketDetail.Quantity++;
+                db.BasketDetail.Update(basketDetail);
+            }
+            else
+            {
+                var product = db.Products.First(m => m.Id == productId);
+                db.BasketDetail.Add(new BasketDetail
+                {
+                    BasketId = id,
+                    Fee = product.Price,
+                    ProductId = product.Id
+                });
+            }
+
+            return GetSuccessResult();
+        }
     }
 }
