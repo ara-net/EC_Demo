@@ -1,4 +1,6 @@
 ﻿
+using EC.Domain.Tables;
+
 namespace EC.BL.Interface
 {
     public interface IMenuBL:IBase

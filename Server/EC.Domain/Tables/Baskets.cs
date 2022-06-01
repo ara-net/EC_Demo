@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EC.Domain
+namespace EC.Domain.Tables
 {
     public class Baskets
     {

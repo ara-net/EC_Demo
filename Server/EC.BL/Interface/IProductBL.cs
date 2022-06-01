@@ -1,4 +1,6 @@
-﻿namespace EC.BL.Interface
+﻿using EC.Domain.Tables;
+
+namespace EC.BL.Interface
 {
     public interface IProductBL
     {

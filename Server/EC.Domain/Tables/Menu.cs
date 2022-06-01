@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EC.Domain
+namespace EC.Domain.Tables
 {
     public class Menu
     {

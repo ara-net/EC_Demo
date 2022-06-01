@@ -1,4 +1,5 @@
 ﻿using EC.Common.Tools;
+using EC.Domain.Tables;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EC_Server.Controllers

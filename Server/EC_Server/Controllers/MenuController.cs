@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EC.Domain.Tables;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EC_Server.Controllers
 {

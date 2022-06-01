@@ -1,6 +1,6 @@
 ﻿using EC.Common.Tools;
 
-namespace EC.Domain
+namespace EC.Domain.Tables
 {
     public class BasketHistory
     {

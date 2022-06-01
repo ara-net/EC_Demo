@@ -1,4 +1,7 @@
-﻿namespace EC.BL.Business
+﻿using EC.Domain.DataAccess;
+using EC.Domain.Tables;
+
+namespace EC.BL.Business
 {
     public class UserBL : BlBase, IUserBL
     {

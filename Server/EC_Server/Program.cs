@@ -3,6 +3,7 @@ global using EC.BL.Interface;
 global using EC.Domain;
 global using EC.Common.DTO;
 using EC_Server.Hubs;
+using EC.Domain.DataAccess;
 
 var builder = WebApplication.CreateBuilder(args);
 

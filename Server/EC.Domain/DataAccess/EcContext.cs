@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EC.Domain.Tables;
+using Microsoft.EntityFrameworkCore;
 
-
-namespace EC.Domain
+namespace EC.Domain.DataAccess
 {
-    public class EcContext : DbContext
+    public partial class EcContext : DbContext
     {
         public EcContext(DbContextOptions<EcContext> options)
             : base(options)

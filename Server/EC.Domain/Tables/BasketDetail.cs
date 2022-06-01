@@ -1,4 +1,4 @@
-﻿namespace EC.Domain
+﻿namespace EC.Domain.Tables
 {
     public class BasketDetail
     {
